@@ -6,11 +6,155 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<script type="text/javascript" src="./assets/js/script.js"></script>
 </head>
 <body>
 	<!-- Ad Section -->
 	<section id="ad1">
 		<img src="./assets/img/ads/ad1.jpg">
 	</section>
+
+	<!-- Navigation -->
+	<nav class="navbar">
+		<div class="navbar-nav">
+			<div>
+				<img onclick="navbar()" class="navBurger" src="assets/img/expand.svg">
+				<img class="navbar-logo"  src="assets/img/logo.png">
+			</div>
+			<div id="nav-search"> 
+				<div class="seacrh-icon">
+					<img class="search-icon" src="assets/img/svgexport-3.svg">
+				</div>
+				<div>
+					<input class="searchInput" type="text">
+				</div>
+			</div>
+			<div id="search-close" onclick="closeSearch()">
+				<img class="close-icon" src="assets/img/svgexport-2.svg">
+			</div>
+			<div style="margin-left: auto;">
+				<a class="sign_in" href="">Sign in</a>
+				<img id="navbar-search" onclick="search()" src="assets/img/svgexport-3.svg">
+			</div>
+		</div>
+	</nav>
+
+	<!-- Collapsed -->
+	<div class="navbar_info" id="navbar_background" onclick="closeCollapse()">
+	</div>
+
+	<div id="navbar-collapse">
+		<div id="collapseHeight">
+			<div class="closeCol">
+				<img class="close" onclick="closeCollapse()" src="assets/img/svgexport-2.svg">
+			</div>
+			<div class="scroll-bar">
+				<div class="nav-item navBorderLine ">
+					<a>Home</a>
+				</div>
+				<div class="nav-item navBorderLine" onclick="mov()">
+					<div>
+						<img class="navArrow" id="navArrow" src="assets/img/svgexport-5.svg">
+					</div>
+					<div>
+						<a>Movies</a>
+					</div>
+					<div class="nav_info" id="navMovies">
+						<div class="nav_content hoverGrey">
+							<a>Now Showing</a>
+						</div>
+						<div class="nav_content hoverGrey">
+							<a>Advance Sales</a>
+						</div>
+						<div class="nav_content hoverGrey">
+							<a>Film Festival</a>
+						</div>
+					</div>
+				</div>
+				<div class="nav-item navBorderLine ">
+					<a>Showtimes</a>
+				</div>
+				<div class="nav-item navBorderLine" onclick="promotions()">
+					<div>
+						<img class="navArrow" id="promo-navArrow" src="assets/img/svgexport-5.svg">
+					</div>
+					<div>
+						<a>Promotions</a>
+					</div>
+					<div class="nav_info" id="promo_info">
+						<div class="nav_content hoverGrey">
+							<a>All Promo</a>
+						</div>
+						<div class="nav_content hoverGrey">
+							<a>Contests</a>
+						</div>
+					</div>
+				</div>
+				<div class="nav-item navBorderLine" onclick="cine()">
+					<div>
+						<img class="navArrow" id="cine-navArrow" src="assets/img/svgexport-5.svg">
+					</div>
+					<div>
+						<a>Cinemas</a>
+					</div>
+					<div class="nav_info" id="cine_info">
+						<div class="nav_content hoverGrey">
+							<a>Cinema Experiences</a>
+						</div>
+						<div class="nav_content hoverGrey">
+							<a>Aurum Theatre</a>
+						</div>
+					</div>
+				</div>
+				<div class="nav-item navBorderLine ">
+					<a>Shop</a>
+				</div>
+				<div class="nav-item navBorderLine" onclick="fnBev()">
+					<div>
+						<img class="navArrow" id="fnb-navArrow" src="assets/img/svgexport-5.svg">
+					</div>
+					<div>
+						<a>Food & Beverage</a>
+					</div>
+					<div class="nav_info" id="fnb_info">
+						<div class="nav_content hoverGrey">
+							<a>Jin Gastrobar</a>
+						</div>
+					</div>
+				</div>
+				<div class="nav-item navBorderLine ">
+					<a>Autism Awareness 2020</a>
+				</div>
+				<div class="nav-item navBorderLine ">
+					<a>GSC HLB CREDIT CARD</a>
+				</div>
+				<div class="nav-item navBorderLine" onclick="Help()">
+					<div>
+						<img class="navArrow" id="help-navArrow" src="assets/img/svgexport-5.svg">
+					</div>
+					<div>
+						<a>Help</a>
+					</div>
+					<div class="nav_info" id="help_info">
+						<div class="nav_content hoverGrey">
+							<a>FAQ</a>
+						</div>
+						<div class="nav_content hoverGrey">
+							<a>Privacy Policy</a>
+						</div>
+						<div class="nav_content hoverGrey">
+							<a>ABAC Policy</a>
+						</div>
+						<div class="nav_content hoverGrey">
+							<a>Whistleblowing</a>
+						</div>
+						<div class="nav_content hoverGrey">
+							<a>Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
