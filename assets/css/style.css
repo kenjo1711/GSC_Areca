@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+}
+
+/* Ad */
+
+#ad1 {
+	display: flex; 
+	justify-content: center; 
+	background-color: #000;" 
+}
