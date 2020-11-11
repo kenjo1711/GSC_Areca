@@ -315,3 +315,48 @@ body {
 	font-weight: 500; 
 	color: #fff;
 }
+
+/*Footer*/
+
+footer {
+    background-color: #141414;
+    padding: 30px;
+    color: white;
+}
+
+footer .footer-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 100px;
+}
+
+.footer-group {
+    line-height: 2em;
+}
+
+.footer-group a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-group .footer-links a {
+    color: rgba(255, 255, 255, 0.452);
+    font-weight: 100;
+}
+
+.footer-group .footer-icons svg {
+    margin: 0 10px 0 0;
+}
+
+#ad-text a {
+    color: #FFEE00;
+}
+
+#shop-button {
+    padding: 7px  30px;
+    background-color: #FFEE00;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
