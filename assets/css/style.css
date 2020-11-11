@@ -181,7 +181,7 @@ body {
 	padding: 7.5px 0px 7px 10px;
     font-size: 14px;
     font-weight: 500;
-    padding-right: 0px !important;
+    padding-right: 0px;
     cursor: pointer;
 }
 
@@ -353,7 +353,7 @@ body {
     word-wrap: break-word;
     white-space: normal;
     width: 100%;
-    font-size: 12px!important;
+    font-size: 12px;
     color: #666;
     margin-top: 4px;
     line-height: 1.5;
@@ -362,7 +362,7 @@ body {
 #promoCard-container {
 	max-width: 1220px;
 	display: grid;
-	grid-template-columns: auto auto auto auto ;
+	grid-template-columns: auto auto auto auto;
 	overflow: hidden;
 	padding-top: 14px;
 }
