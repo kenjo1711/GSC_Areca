@@ -207,8 +207,8 @@ body {
 
 .close {
 	display: block;
-	height: 15px;
 	float: right;
+	height: 15px;
 }
 
 .close:hover {
@@ -216,12 +216,102 @@ body {
 }
 
 .navArrow {
-	height: 12px;
 	display: block;
 	transition: .5s;
+	height: 12px;
+	margin-right: 12px;
 	float: left;
-	transform: rotate(0deg);
 	margin-left: -24px;
 	margin-top: 2px;
-	margin-right: 12px;
+	transform: rotate(0deg);
+}
+
+/*Tabs*/
+
+.mainTabSection {
+	max-width: 1203px;
+    min-width: 320px;
+	margin: 30px auto;
+}
+
+.tabSectionBorder {
+	max-width: 100%;
+}
+
+.tabSection {
+	font-size: 14px;
+    display: inline-block;
+    height: 100%;
+    margin: 0 32px 0 0;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+#tabContainer {
+	display: flex; 
+	border-bottom: 1px solid grey;
+}
+
+.activeTab {
+	color: yellow;
+}
+
+#tabLine {
+	display: block;
+    width: 112px;
+    background-color: #f7f728;
+    height: 1px;
+    margin-top: -1px;
+    transition: 0.5s;
+}
+
+.tab {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	margin-top: 23px; 
+	text-decoration: none; 
+	list-style: none;
+	margin-bottom: 8px;
+}
+
+.tabItems {
+	position:relative; 
+	height: 100%; 
+	width: 222px;
+	margin-right: 23px;
+	margin-top: 7px;
+}
+
+.tabItems:hover {
+	cursor: pointer;
+}
+
+.tabItems-div {
+	height: 100%;  
+	width: 100%
+}
+
+.img-fluid {
+	width: 100%;
+}
+
+.bgGrayscale {
+	filter: grayscale(100%);
+}
+
+.tabItems-text {
+	top: 0;
+	width: 100%; 
+	margin:0;
+	padding-top: 18px;
+	padding-left: 15px;
+	height: 100%; 
+	position: absolute; 
+	z-index:1;
+}
+
+.tabItems-text span {
+	font-size: 14px; 
+	font-weight: 500; 
+	color: #fff;
 }

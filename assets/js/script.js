@@ -2,14 +2,14 @@
 
 function navbar() {
 	document.getElementById('navbar-collapse').style.marginLeft = "0px";
-	document.getElementById('navbar_background').style.width = "100%";
-	document.getElementById('navbar_background').style.height = "100vh";
+	document.getElementById('navBg').style.width = "100%";
+	document.getElementById('navBg').style.height = "100vh";
 }
 
 function closeCollapse(){
 	document.getElementById('navbar-collapse').style.marginLeft = "-260px";
-	document.getElementById('navbar_background').style.width = "0%";
-	document.getElementById('navbar_background').style.height = "0vh";
+	document.getElementById('navBg').style.width = "0%";
+	document.getElementById('navBg').style.height = "0vh";
 }
 
 // Collapsed Navigation
@@ -85,4 +85,78 @@ function closeSearch() {
 		x.style.display = "none";
 		y.style.display = "block";
 		z.style.display = "none";
+}
+
+// Tabs
+
+function promo() {
+	document.getElementById("promotions").style.color = "yellow";
+	document.getElementById("contests").style.color = "white";
+	document.getElementById("announcements").style.color = "white";
+	var x = document.getElementById('tabLine');
+		x.style.transform = "translate3d(0px, 0px, 0px)";
+		x.style.width = "115px"
+}
+
+function contests() {
+	document.getElementById("promotions").style.color = "white";
+	document.getElementById("contests").style.color = "yellow";
+	document.getElementById("announcements").style.color = "white";
+	var x = document.getElementById('tabLine');
+		x.style.transform = "translate3d(123px, 0px, 0px)";
+		x.style.width = "115px"
+	document.getElementById("page_1").style.display = "none"
+	document.getElementById("page_2").style.display = "none"
+}
+
+function announcements() {
+	document.getElementById("promotions").style.color = "white";
+	document.getElementById("contests").style.color = "white";
+	document.getElementById("announcements").style.color = "yellow";
+
+	var x = document.getElementById('tabLine');
+		x.style.transform = "translate3d(245px, 0px, 0px)";
+		x.style.width = "150px"
+	document.getElementById("page_1").style.display = "none"
+	document.getElementById("page_2").style.display = "block"
+}
+
+function All() {
+	document.getElementById("all").style.filter = "grayscale(0%)"
+	document.getElementById("moviePerks").style.filter = "grayscale(100%)"
+	document.getElementById("bankPromos").style.filter = "grayscale(100%)"
+	document.getElementById("foodNB").style.filter = "grayscale(100%)"
+	document.getElementById("events").style.filter = "grayscale(100%)"
+}
+
+function moviePerks() {
+	document.getElementById("all").style.filter = "grayscale(100%)"
+	document.getElementById("moviePerks").style.filter = "grayscale(0%)"
+	document.getElementById("bankPromos").style.filter = "grayscale(100%)"
+	document.getElementById("foodNB").style.filter = "grayscale(100%)"
+	document.getElementById("events").style.filter = "grayscale(100%)"
+}
+
+function bankPromos() {
+	document.getElementById("all").style.filter = "grayscale(100%)"
+	document.getElementById("moviePerks").style.filter = "grayscale(100%)"
+	document.getElementById("bankPromos").style.filter = "grayscale(0%)"
+	document.getElementById("foodNB").style.filter = "grayscale(100%)"
+	document.getElementById("events").style.filter = "grayscale(100%)"
+}
+
+function foodNB() {
+	document.getElementById("all").style.filter = "grayscale(100%)"
+	document.getElementById("moviePerks").style.filter = "grayscale(100%)"
+	document.getElementById("bankPromos").style.filter = "grayscale(100%)"
+	document.getElementById("foodNB").style.filter = "grayscale(0%)"
+	document.getElementById("events").style.filter = "grayscale(100%)"
+}
+
+function events() {
+	document.getElementById("all").style.filter = "grayscale(100%)"
+	document.getElementById("moviePerks").style.filter = "grayscale(100%)"
+	document.getElementById("bankPromos").style.filter = "grayscale(100%)"
+	document.getElementById("foodNB").style.filter = "grayscale(100%)"
+	document.getElementById("events").style.filter = "grayscale(0%)"
 }

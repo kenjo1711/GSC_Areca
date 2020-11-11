@@ -5,13 +5,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="./assets/img/gscIcon.jpg">
 	<script type="text/javascript" src="./assets/js/script.js"></script>
 </head>
 <body>
 	<!-- Ad Section -->
 	<section id="ad1">
-		<img src="./assets/img/ads/ad1.jpg">
+		<a target="_blank" href="https://jommenyumbang.com/ms/kempen/bantuan-musim-sejuk"><img src="./assets/img/ads/ad1.jpg"></a>
 	</section>
 
 	<!-- Navigation -->
@@ -40,7 +40,7 @@
 	</nav>
 
 	<!-- Collapsed -->
-	<div class="navbar_info" id="navbar_background" onclick="closeCollapse()">
+	<div class="navbar_info" id="navBg" onclick="closeCollapse()">
 	</div>
 
 	<div id="navbar-collapse">
@@ -156,5 +156,69 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Tabs -->
+		<section class="mainTabSection">
+			<div class="tabSectionBorder">
+				<div class="text-white" id="tabContainer">
+					<div class="tabSection activeTab" id="promotions" onclick="promo()">Promotions</div>
+					<div class="tabSection" id="contests" onclick="contests()">Contests</div>
+					<div class="tabSection" id="announcements" onclick="announcements()">Announcements</div>
+				</div>
+				<span id="tabLine"></span>
+			</div>
+				
+			<div class="promotions" >
+				<div class="text-white tab">
+					<div class="tabItems" onclick="All()">
+						<div class="tabItems-div">
+							<img class="img-fluid" id="all" src="assets/img/tabs/all.png">	
+						</div>
+						<div class="tabItems-text">
+							<span>All</span>
+						</div>
+					</div>
+					<div class="tabItems" onclick="moviePerks()">
+						<div class="tabItems-div">
+							<img class="img-fluid bgGrayscale" id="moviePerks" src="assets/img/tabs/movie.png">	
+						</div>
+						<div class="tabItems-text">
+							<span>Movie Perks</span>
+						</div>
+					</div>
+					<div class="tabItems" onclick="bankPromos()">
+						<div class="tabItems-div">
+							<img class="img-fluid bgGrayscale" id="bankPromos" src="assets/img/tabs/bank.png">	
+						</div>
+						<div class="tabItems-text">
+							<span>Bank Promos</span>
+						</div>
+					</div>
+					<div class="tabItems" onclick="foodNB()">
+						<div class="tabItems-div">
+							<img class="img-fluid bgGrayscale" id="foodNB" src="assets/img/tabs/fnb.png">	
+						</div>
+						<div class="tabItems-text">
+							<span>Food & Beverages</span>
+						</div>
+					</div>
+					<div class="tabItems" onclick="events()">
+						<div class="tabItems-div">
+							<img class="img-fluid bgGrayscale" id="events" src="assets/img/tabs/events.png">	
+						</div>
+						<div class="tabItems-text">
+							<span>Events</span>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+		</section>
+
+
+
+
+
+
 </body>
 </html>
