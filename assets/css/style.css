@@ -88,7 +88,7 @@ body {
 	float: right;
 }
 
-.search-icon{
+.searchIcon{
 	height: 18px;
 	margin: 6px;
 	display: block;
@@ -143,7 +143,7 @@ body {
 	display: none;
 }
 
-.nav_info {
+.navInfoSec {
 	display: none;
 	transition: 0.5s;
 }
@@ -176,7 +176,7 @@ body {
 	max-height: 100%;
 }
 
-.nav_content {
+.navInfoItems {
     color: #fff;
 	padding: 7.5px 0px 7px 10px;
     font-size: 14px;
@@ -299,7 +299,7 @@ body {
 	filter: grayscale(100%);
 }
 
-.tabItems-text {
+.tabItems-info {
 	top: 0;
 	width: 100%; 
 	margin:0;
@@ -310,10 +310,65 @@ body {
 	z-index:1;
 }
 
-.tabItems-text span {
+.tabItems-info span {
 	font-size: 14px; 
 	font-weight: 500; 
 	color: #fff;
+}
+
+/*Tab Content*/
+
+#section-promotions {
+	max-width: 1220px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	overflow: hidden;
+}
+
+.promotionCard {
+	width: 285px;;
+    margin-top: 18px;
+}
+
+.promotionCard-info {
+	width:100%;
+	padding: 0;
+	text-align: left;
+	height: 100%;
+	margin-bottom: 10px;
+}
+
+.promotionCard-info h3 {
+	font-weight: 400;
+	padding: 0;
+	word-wrap: break-word;
+	white-space: normal;
+	width: 100%;
+	color: #fff;
+	font-size: 17px;
+	margin-top: 6px;
+}
+
+.promotionCard-info p{
+    word-wrap: break-word;
+    white-space: normal;
+    width: 100%;
+    font-size: 12px!important;
+    color: #666;
+    margin-top: 4px;
+    line-height: 1.5;
+}
+
+#promoCard-container {
+	max-width: 1220px;
+	display: grid;
+	grid-template-columns: auto auto auto auto ;
+	overflow: hidden;
+	padding-top: 14px;
+}
+
+#announcePage {
+	display: none ;
 }
 
 /*Footer*/

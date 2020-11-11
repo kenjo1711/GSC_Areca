@@ -59,7 +59,7 @@ function fnBev(){
 }
 
 function Help(){
-	var x = document.getElementById('help_info');
+	var x = document.getElementById('navHelp');
 	if (x.style.display === "block") {
 		x.style.display = "none";
 		document.getElementById('help-navArrow').style.transform = "rotate(0deg)";
@@ -96,6 +96,8 @@ function promo() {
 	var x = document.getElementById('tabLine');
 		x.style.transform = "translate3d(0px, 0px, 0px)";
 		x.style.width = "115px"
+	document.getElementById("promoPage").style.display = "block"
+	document.getElementById("announcePage").style.display = "none"
 }
 
 function contests() {
@@ -105,20 +107,19 @@ function contests() {
 	var x = document.getElementById('tabLine');
 		x.style.transform = "translate3d(123px, 0px, 0px)";
 		x.style.width = "115px"
-	document.getElementById("page_1").style.display = "none"
-	document.getElementById("page_2").style.display = "none"
+	document.getElementById("promoPage").style.display = "none"
+	document.getElementById("announcePage").style.display = "none"
 }
 
 function announcements() {
 	document.getElementById("promotions").style.color = "white";
 	document.getElementById("contests").style.color = "white";
 	document.getElementById("announcements").style.color = "yellow";
-
 	var x = document.getElementById('tabLine');
 		x.style.transform = "translate3d(245px, 0px, 0px)";
 		x.style.width = "150px"
-	document.getElementById("page_1").style.display = "none"
-	document.getElementById("page_2").style.display = "block"
+	document.getElementById("promoPage").style.display = "none"
+	document.getElementById("announcePage").style.display = "block"
 }
 
 function All() {
@@ -127,6 +128,26 @@ function All() {
 	document.getElementById("bankPromos").style.filter = "grayscale(100%)"
 	document.getElementById("foodNB").style.filter = "grayscale(100%)"
 	document.getElementById("events").style.filter = "grayscale(100%)"
+	promotions_banner5 = document.querySelectorAll(".promoCard-content5")
+	for (i = 0; i < promotions_banner5.length; i++) {
+	    promotions_banner5[i].style.display ="block"
+	  }
+	promotions_banner4 = document.querySelectorAll(".promoCard-content4")
+	for (i = 0; i < promotions_banner4.length; i++) {
+	    promotions_banner4[i].style.display ="block"
+	  }
+	promotions_banner3 = document.querySelectorAll(".promoCard-content3")
+	for (i = 0; i < promotions_banner3.length; i++) {
+	    promotions_banner3[i].style.display ="block"
+	  }
+	promotions_banner2 = document.querySelectorAll(".promoCard-content2")
+	for (i = 0; i < promotions_banner2.length; i++) {
+	    promotions_banner2[i].style.display ="block"
+	  }
+	promotions_banner1 = document.querySelectorAll(".promoCard-content1")
+	for (i = 0; i < promotions_banner1.length; i++) {
+	    promotions_banner1[i].style.display ="block"
+	  }
 }
 
 function moviePerks() {
@@ -135,6 +156,26 @@ function moviePerks() {
 	document.getElementById("bankPromos").style.filter = "grayscale(100%)"
 	document.getElementById("foodNB").style.filter = "grayscale(100%)"
 	document.getElementById("events").style.filter = "grayscale(100%)"
+	promotions_banner5 = document.querySelectorAll(".promoCard-content5")
+	for (i = 0; i < promotions_banner5.length; i++) {
+	    promotions_banner5[i].style.display ="none"
+	  }
+	promotions_banner4 = document.querySelectorAll(".promoCard-content4")
+	for (i = 0; i < promotions_banner4.length; i++) {
+	    promotions_banner4[i].style.display ="none"
+	  }
+	promotions_banner3 = document.querySelectorAll(".promoCard-content3")
+	for (i = 0; i < promotions_banner3.length; i++) {
+	    promotions_banner3[i].style.display ="none"
+	  }
+	promotions_banner2 = document.querySelectorAll(".promoCard-content2")
+	for (i = 0; i < promotions_banner2.length; i++) {
+	    promotions_banner2[i].style.display ="inline-block"
+	  }
+	promotions_banner1 = document.querySelectorAll(".promoCard-content1")
+	for (i = 0; i < promotions_banner1.length; i++) {
+	    promotions_banner1[i].style.display ="none"
+	  }
 }
 
 function bankPromos() {
@@ -143,6 +184,26 @@ function bankPromos() {
 	document.getElementById("bankPromos").style.filter = "grayscale(0%)"
 	document.getElementById("foodNB").style.filter = "grayscale(100%)"
 	document.getElementById("events").style.filter = "grayscale(100%)"
+	promotions_banner5 = document.querySelectorAll(".promoCard-content5")
+	for (i = 0; i < promotions_banner5.length; i++) {
+	    promotions_banner5[i].style.display ="none"
+	  }
+	promotions_banner4 = document.querySelectorAll(".promoCard-content4")
+	for (i = 0; i < promotions_banner4.length; i++) {
+	    promotions_banner4[i].style.display ="none"
+	  }
+	promotions_banner3 = document.querySelectorAll(".promoCard-content3")
+	for (i = 0; i < promotions_banner3.length; i++) {
+	    promotions_banner3[i].style.display ="block"
+	  }
+	promotions_banner2 = document.querySelectorAll(".promoCard-content2")
+	for (i = 0; i < promotions_banner2.length; i++) {
+	    promotions_banner2[i].style.display ="none"
+	  }
+	promotions_banner1 = document.querySelectorAll(".promoCard-content1")
+	for (i = 0; i < promotions_banner1.length; i++) {
+	    promotions_banner1[i].style.display ="none"
+	  }
 }
 
 function foodNB() {
@@ -151,6 +212,26 @@ function foodNB() {
 	document.getElementById("bankPromos").style.filter = "grayscale(100%)"
 	document.getElementById("foodNB").style.filter = "grayscale(0%)"
 	document.getElementById("events").style.filter = "grayscale(100%)"
+	promotions_banner5 = document.querySelectorAll(".promoCard-content5")
+	for (i = 0; i < promotions_banner5.length; i++) {
+	    promotions_banner5[i].style.display ="none"
+	  }
+	promotions_banner4 = document.querySelectorAll(".promoCard-content4")
+	for (i = 0; i < promotions_banner4.length; i++) {
+	    promotions_banner4[i].style.display ="inline-block"
+	  }
+	promotions_banner3 = document.querySelectorAll(".promoCard-content3")
+	for (i = 0; i < promotions_banner3.length; i++) {
+	    promotions_banner3[i].style.display ="none"
+	  }
+	promotions_banner2 = document.querySelectorAll(".promoCard-content2")
+	for (i = 0; i < promotions_banner2.length; i++) {
+	    promotions_banner2[i].style.display ="none"
+	  }
+	promotions_banner1 = document.querySelectorAll(".promoCard-content1")
+	for (i = 0; i < promotions_banner1.length; i++) {
+	    promotions_banner1[i].style.display ="none"
+	  }
 }
 
 function events() {
@@ -159,4 +240,24 @@ function events() {
 	document.getElementById("bankPromos").style.filter = "grayscale(100%)"
 	document.getElementById("foodNB").style.filter = "grayscale(100%)"
 	document.getElementById("events").style.filter = "grayscale(0%)"
+	promotions_banner5 = document.querySelectorAll(".promoCard-content5")
+	for (i = 0; i < promotions_banner5.length; i++) {
+	    promotions_banner5[i].style.display ="block"
+	  }
+	promotions_banner4 = document.querySelectorAll(".promoCard-content4")
+	for (i = 0; i < promotions_banner4.length; i++) {
+	    promotions_banner4[i].style.display ="none"
+	  }
+	promotions_banner3 = document.querySelectorAll(".promoCard-content3")
+	for (i = 0; i < promotions_banner3.length; i++) {
+	    promotions_banner3[i].style.display ="none"
+	  }
+	promotions_banner2 = document.querySelectorAll(".promoCard-content2")
+	for (i = 0; i < promotions_banner2.length; i++) {
+	    promotions_banner2[i].style.display ="none"
+	  }
+	promotions_banner1 = document.querySelectorAll(".promoCard-content1")
+	for (i = 0; i < promotions_banner1.length; i++) {
+	    promotions_banner1[i].style.display ="none"
+	  }
 }
