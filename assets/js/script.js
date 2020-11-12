@@ -4,12 +4,15 @@ function navbar() {
 	document.getElementById('navbar-collapse').style.marginLeft = "0px";
 	document.getElementById('navBg').style.width = "100%";
 	document.getElementById('navBg').style.height = "100vh";
+	document.getElementById("navBg").style.zIndex = "500";
+	document.getElementsByTagName('html')[0].style.overflow = "hidden";
 }
 
 function closeCollapse(){
 	document.getElementById('navbar-collapse').style.marginLeft = "-260px";
 	document.getElementById('navBg').style.width = "0%";
 	document.getElementById('navBg').style.height = "0vh";
+	document.getElementsByTagName('html')[0].style.overflow = "visible";
 }
 
 // Collapsed Navigation

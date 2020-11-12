@@ -9,6 +9,11 @@ body {
 	font-family: sans-serif;
 }
 
+a {
+	user-select: none;
+	text-decoration: none;
+}
+
 /* Ad */
 
 #ad1 {
@@ -28,11 +33,11 @@ body {
 }
 
 .navbar-nav {
+	max-width: 320px;
+    min-width: 1280px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    max-width: 320px;
-    min-width: 1280px;
 }
 
 .navBurger {
@@ -126,11 +131,12 @@ body {
     max-height: 100%;
 	top: 0;
 	background-color: black;
-	transition: .5s;
+	transition: .3s ease-out;
 	height: 100vh;
 	padding: 16px;
 	margin-left: -260px;
     height: 100%;
+    z-index: 500;
 }
 
 #collapseHeight {
@@ -318,7 +324,7 @@ body {
 
 /*Tab Content*/
 
-#section-promotions {
+#promoSection {
 	max-width: 1220px;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
@@ -350,21 +356,21 @@ body {
 }
 
 .promotionCard-info p{
-    word-wrap: break-word;
     white-space: normal;
     width: 100%;
     font-size: 12px;
     color: #666;
     margin-top: 4px;
     line-height: 1.5;
+    word-wrap: break-word;
 }
 
 #promoCard-container {
 	max-width: 1220px;
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	overflow: hidden;
 	padding-top: 14px;
+	display: grid;
+	overflow: hidden;
+	grid-template-columns: auto auto auto auto;
 }
 
 #announcePage {
@@ -377,17 +383,19 @@ footer {
     background-color: #141414;
     padding: 30px;
     color: white;
+    border-top: 1px solid #5C5C5C;
+    font-size: 15px;
 }
 
 footer .footer-items{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     margin: 0 100px;
 }
 
 .footer-group {
     line-height: 2em;
+    margin: 0 20px;
 }
 
 .footer-group a {
@@ -415,3 +423,202 @@ footer .footer-items{
     border-radius: 15px;
     cursor: pointer;
 }
+
+/*Responsiveness*/
+
+@media (max-width: 1440px) {
+	.navbar-nav {
+		min-width: 920px;
+	}
+
+	.mainTabSection {
+		max-width: 950px;
+	}
+
+	.tabItems {
+		width: 170px;
+		margin-right: 25px !important;
+	}
+
+	.tabItems-info {
+		padding-top: 12px;
+		padding-left: 13px;
+	}
+
+	#promoCard-container {
+		max-width: 970px;
+	}
+
+	.promotionCard {
+		max-width: 222px ;
+	    margin-top: 26px;
+	}
+
+	footer .footer-items {
+	    margin: 0;
+	    justify-content: center;
+	}	
+}
+
+@media (max-width: 1024px){
+	#ad1 img {
+		max-width: calc(100% - 5px);
+	}
+
+	#promoSection {
+		max-width: 970px;
+	}
+
+	#promoSection {
+		display: grid;
+		margin-left: 5px;
+		overflow: hidden;
+		grid-template-columns: auto auto auto;
+		max-width: calc(102% - 10px) !important;
+	}
+
+	#promoCard-container {
+		display: grid;
+		margin-left: 5px;
+		overflow: hidden;
+		grid-template-columns: auto auto auto;
+		max-width: calc(102% - 10px) !important;
+	}
+
+	.tab {
+		grid-template-columns: auto auto auto auto;
+	}
+
+	.mainTabSection {
+	    padding-right: 5px;
+		padding-left: 5px;
+	}
+
+	#tabContainer {
+	    margin-right: 5px;
+		margin-left: 5px;
+	}
+
+	#tabLine {
+	    margin-right: 5px;
+		margin-left: 5px;
+	}
+
+	.tabItems {
+	    margin-right: 5px;
+	    margin-left: 5px;
+	    width: calc(100% - 10px) !important;
+	}
+
+	.tabItems-info {
+		padding-left: 13px;
+		padding-top: calc(12.5% - 10px) !important;
+	}	
+
+	.promotionCard {
+	    margin-top: 26px;
+		max-width: 300px !important;
+	    width: calc(100% - 15px) !important;
+	}
+
+	footer .footer-items .footer-group-container {
+	    display: grid;
+	    grid-template-columns: 400px auto;
+	    width: calc(100% - 5px);
+	} 
+
+	footer .footer-items {
+	    flex-direction: column;
+	}
+}
+
+@media (max-width: 940px) {
+	.navbar-nav {
+		min-width: calc(100% - 5px);
+	}
+}
+
+@media (max-width: 759px) {
+    footer {
+        font-size: 11px;
+    }
+
+    footer .footer-items .footer-group-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: calc(100% - 5px);
+    } 
+}
+
+@media (max-width: 400px) {
+	.mainTabSection {
+	    padding-right: 2px;
+		padding-left: 2px;
+	}
+
+	#tabContainer {
+		overflow-y: hidden;
+	    margin-right: 2px;
+		margin-left: 2px;
+	}
+
+	#tabLine {
+	    margin-right: 2px;
+		margin-left: 2px;
+	}
+
+	.tabItems {
+	    margin-right: 2px;
+	    margin-left: 2px;
+	    width: calc(100% - 5px) !important;
+	}
+
+	.tabItems-info {
+		padding-left: 13px;
+		padding-top: calc(12.5% - 5px) !important;
+	}
+}
+
+@media (max-width: 640px) {
+	.tab {
+		grid-template-columns: auto auto !important;
+	}
+
+	#tabContainer {;
+		width: calc(100% - 5px);
+	}
+
+	.promotionCard {
+	    margin-top: 30px;
+		width: calc(100% - 10px);
+	}
+
+	.announcements-div {
+		margin-top: 30px;
+		width: calc(100% - 10px);
+	}
+
+	#promoSection {
+		width: 620px;
+		overflow: hidden;
+		margin-left: 5px;
+		display: grid;
+		max-width: calc(102% - 5px) !important;
+		grid-template-columns: auto auto !important;
+	}
+
+	#promoCard-container {
+		width: 620px;
+		margin-left: 5px;
+		overflow: hidden;
+		display: grid;
+		max-width: calc(102% - 5px) !important;
+		grid-template-columns: auto auto auto auto !important;
+	}
+}
+
+@media (max-width: 426px) {
+    footer .footer-items .footer-group-container .footer-group img {
+        width: calc(100% - 5px);
+    } 
+} 
