@@ -4,40 +4,50 @@
 	<title>Golden Screen Cinemas | Malaysia's Leading Cinema Online</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-	<link rel="icon" type="image/png" href="./assets/img/gscIcon.jpg">
-	<script type="text/javascript" src="./assets/js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+	<link rel="icon" type="image/png" href="../../assets/img/gscIcon.jpg">
+	<link rel="stylesheet" type="text/css" href="../css/content.css">
+	<script type="text/javascript" src="../../assets/js/script.js"></script>
 </head>
 <body>
 	<!-- Ad Section -->
 	<section id="ad1">
-		<a target="_blank" href="https://jommenyumbang.com/ms/kempen/bantuan-musim-sejuk"><img src="./assets/img/ads/ad1.jpg" alt="Advert1"></a>
+		<a target="_blank" href="https://jommenyumbang.com/ms/kempen/bantuan-musim-sejuk"><img src="../../assets/img/ads/ad1.jpg" alt="Advert1"></a>
 	</section>
 
 	<!-- Navigation -->
 	<nav class="navbar">
 		<div class="navbar-nav">
 			<div>
-				<img onclick="navbar()" class="navBurger" src="assets/img/expand.svg">
-				<img class="navbar-logo"  src="assets/img/logo.png">
+				<img onclick="navbar()" class="navBurger" src="../../assets/img/expand.svg">
+				<img class="navbar-logo"  src="../../assets/img/logo.png">
 			</div>
 			<div id="nav-search"> 
 				<div class="search-container">
-					<img class="searchIcon" src="assets/img/svgexport-3.svg">
+					<img class="searchIcon" src="../../assets/img/svgexport-3.svg">
 				</div>
 				<div>
 					<input class="searchInput" type="text">
 				</div>
 			</div>
 			<div id="search-close" onclick="closeSearch()">
-				<img class="close-icon" src="assets/img/svgexport-2.svg">
+				<img class="close-icon" src="../../assets/img/svgexport-2.svg">
 			</div>
 			<div style="margin-left: auto;">
 				<a class="sign_in" href="">Sign in</a>
-				<img id="navbar-search" onclick="search()" src="assets/img/svgexport-3.svg">
+				<img id="navbar-search" onclick="search()" src="../../assets/img/svgexport-3.svg">
 			</div>
 		</div>
 	</nav>
+
+	<!-- Content -->
+	<div id="container">
+		<img src="img1.jpg">
+		<h2 style="color: white;">1-for-1 Gold Class Tickets for Citi Prestige Card Members</h2>
+		<p>
+			<img src="img2.jpg">
+		</p>
+	</div>
 
 	<!-- Collapsed -->
 	
@@ -47,7 +57,7 @@
 	<div id="navbar-collapse">
 		<div id="collapseHeight">
 			<div class="closeCol">
-				<img class="close" onclick="closeCollapse()" src="assets/img/svgexport-2.svg">
+				<img class="close" onclick="closeCollapse()" src="../../assets/img/svgexport-2.svg">
 			</div>
 			<div class="scroll-bar">
 				<div class="nav-item navBorderLine">
@@ -55,7 +65,7 @@
 				</div>
 				<div class="nav-item navBorderLine" onclick="mov()">
 					<div>
-						<img class="navArrow" id="navArrow" src="assets/img/svgexport-5.svg">
+						<img class="navArrow" id="navArrow" src="../../assets/img/svgexport-5.svg">
 					</div>
 					<div>
 						<a>Movies</a>
@@ -77,7 +87,7 @@
 				</div>
 				<div class="nav-item navBorderLine" onclick="promotions()">
 					<div>
-						<img class="navArrow" id="promo-navArrow" src="assets/img/svgexport-5.svg">
+						<img class="navArrow" id="promo-navArrow" src="../../assets/img/svgexport-5.svg">
 					</div>
 					<div>
 						<a>Promotions</a>
@@ -93,7 +103,7 @@
 				</div>
 				<div class="nav-item navBorderLine" onclick="cine()">
 					<div>
-						<img class="navArrow" id="cine-navArrow" src="assets/img/svgexport-5.svg">
+						<img class="navArrow" id="cine-navArrow" src="../../assets/img/svgexport-5.svg">
 					</div>
 					<div>
 						<a>Cinemas</a>
@@ -112,7 +122,7 @@
 				</div>
 				<div class="nav-item navBorderLine" onclick="fnBev()">
 					<div>
-						<img class="navArrow" id="fnb-navArrow" src="assets/img/svgexport-5.svg">
+						<img class="navArrow" id="fnb-navArrow" src="../../assets/img/svgexport-5.svg">
 					</div>
 					<div>
 						<a>Food & Beverage</a>
@@ -131,7 +141,7 @@
 				</div>
 				<div class="nav-item navBorderLine" onclick="Help()">
 					<div>
-						<img class="navArrow" id="help-navArrow" src="assets/img/svgexport-5.svg">
+						<img class="navArrow" id="help-navArrow" src="../../assets/img/svgexport-5.svg">
 					</div>
 					<div>
 						<a>Help</a>
@@ -158,262 +168,6 @@
 		</div>
 	</div>
 
-	<!-- Tabs -->
-
-	<section class="mainTabSection">
-		<div class="tabSectionBorder">
-			<div style="color: white;" id="tabContainer">
-				<div class="tabSection activeTab" id="promotions" onclick="promo()"><a>Promotions</a></div>
-				<div class="tabSection" id="contests" onclick="contests()"><a>Contests</a></div>
-				<div class="tabSection" id="announcements" onclick="announcements()"><a>Announcements</a></div>
-			</div>
-			<span id="tabLine"></span>
-		</div>
-
-		<div id="promoPage">
-
-			<div class="promotions" >
-				<div class="tab">
-					<div class="tabItems" onclick="All()">
-						<div class="tabItems-div">
-							<img class="img-fluid" id="all" src="assets/img/tabs/all.png">	
-						</div>
-						<div class="tabItems-info">
-							<span>All</span>
-						</div>
-					</div>
-					<div class="tabItems" onclick="moviePerks()">
-						<div class="tabItems-div">
-							<img class="img-fluid bgGrayscale" id="moviePerks" src="assets/img/tabs/movie.png">	
-						</div>
-						<div class="tabItems-info">
-							<span>Movie Perks</span>
-						</div>
-					</div>
-					<div class="tabItems" onclick="bankPromos()">
-						<div class="tabItems-div">
-							<img class="img-fluid bgGrayscale" id="bankPromos" src="assets/img/tabs/bank.png">	
-						</div>
-						<div class="tabItems-info">
-							<span>Bank Promos</span>
-						</div>
-					</div>
-					<div class="tabItems" onclick="foodNB()">
-						<div class="tabItems-div">
-							<img class="img-fluid bgGrayscale" id="foodNB" src="assets/img/tabs/fnb.png">	
-						</div>
-						<div class="tabItems-info">
-							<span>Food & Beverages</span>
-						</div>
-					</div>
-					<div class="tabItems" onclick="events()">
-						<div class="tabItems-div">
-							<img class="img-fluid bgGrayscale" id="events" src="assets/img/tabs/events.png">	
-						</div>
-						<div class="tabItems-info">
-							<span>Events</span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Tab Contents -->
-
-			<div id="promoSection">
-				<a href="./promotions/content-1/content-1.html">
-					<div class="promotionCard promoCard-content5">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/gaming.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>Big Screen Gaming</h3>
-							<p>Come enjoy your game on our BIG screen! T&C apply</p>
-						</div>
-					</div>
-				</a>
-				<a href="./promotions/content-2/content-2.html">
-					<div class="promotionCard promoCard-content4">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/4designs.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>4 designs for RM60!</h3>
-							<p>Don't wait, collect all 4 Mickey & Friends designs today!</p>
-						</div>
-					</div>
-				</a>
-				<a href="./promotions/content-3/content-3.html">
-					<div class="promotionCard promoCard-content4">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/starwars.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>Get your Star Wars Tumbler at ONLY RM15!</h3>
-							<p>Light side or Dark Side? Why not both!</p>
-						</div>
-					</div>
-				</a>
-				<a href="./promotions/content-4/content-4.html">
-					<div class="promotionCard promoCard-content4">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/trolls.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>Get Poppy Tumbler at ONLY RM10!</h3>
-							<p>Add another RM4 to get any choice of TWO (2) tidbits for on-ground purchase.</p>
-						</div>
-					</div>
-				</a>
-				<a href="./promotions/content-5/content-5.html">
-					<div class="promotionCard promoCard-content2">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/aurum.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>Special Pricing for Aurum Theatre</h3>
-							<p>For a limited time only, experience AURUM THEATRE at a special price. Terms and conditions apply.   </p>
-						</div>
-					</div>
-				</a>
-				<a href="./promotions/content-6/content-6.html">
-					<div class="promotionCard promoCard-content2">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/syq.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>At GSC, we craft powerful, integrated campaigns for all seasons.</h3>
-							<p>Discover a powerhouse of solutions for every story.</p>
-						</div>
-					</div>
-				</a>
-				<a href="./promotions/content-7/content-7.html">
-					<div class="promotionCard promoCard-content3">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/hl_gsc.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>New GSC Hong Leong Bank RM6 Off & Concession Discount!</h3>
-							<p>Enjoy RM6 off on ALL Adult tickets!</p>
-						</div>
-					</div>
-				</a>
-				<a href="./promotions/content-8/content-8.html">
-					<div class="promotionCard promoCard-content4">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/goldie.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>Hot & Spicy Goldie Horn</h3>
-							<p>Hot, crunchy, and very hard to put down after the first bite!</p>
-						</div>
-					</div>
-				</a>
-				<a href="./promotions/content-9/content-9.html">
-					<div class="promotionCard promoCard-content3">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/141Aurum.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>Standard Chartered Buy 1 Free 1 Every Friday, Saturday & Sunday</h3>
-							<p>Buy 1 Free 1 Every Friday, Saturday & Sunday</p>
-						</div>
-					</div>
-				</a>
-				<a href="./promotions/content-10/content-10.html">
-					<div class="promotionCard promoCard-content4">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/cheesyChicken.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>Cheesy Chicken Strips</h3>
-							<p>Bite Me Now! </p>
-						</div>
-					</div>
-				</a>
-				<a href="./promotions/content-11/content-11.html">
-					<div class="promotionCard promoCard-content3">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/141Citi.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>1-for-1 Gold Class Tickets for Citi Prestige Card Members</h3>
-							<p>Immerse in the latest films with your loved ones on Saturdays, Sundays & Public Holidays! Valid for normal seats purchased. T&C applies.</p>
-						</div>
-					</div>
-				</a>
-				<a href="./promotions/content-12/content-12.html">
-					<div class="promotionCard promoCard-content3">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/citiGsc.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>1-for-1 Movie Tickets for Citi Clear Card Members</h3>
-							<p>Buy 1 FREE 1 GSC movie tickets with any Citibank Clear Card on Friday. Terms & conditions apply.</p>
-						</div>
-					</div>
-				</a>
-				<a href="./promotions/content-13/content-13.html">
-					<div class="promotionCard promoCard-content3">
-						<div>
-							<img class="img-fluid" src="assets/img/tabs/tab-content/scRm10.jpg">
-						</div>
-						<div class="promotionCard-info">
-							<h3>Flat 10 Movies *EVERYDAY</h3>
-							<p>Flat RM10 for ONE (1) Normal Adult ticket for showtimes after 1.00PM</p>
-						</div>
-					</div>
-				</a>
-				<div class="promotionCard promoCard-content2">
-					<div>
-					</div>
-					<div class="promotionCard-info">
-					</div>
-				</div>
-				<div class="promotionCard promoCard-content2">
-					<div>
-					</div>
-					<div class="promotionCard-info">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="announcePage" class="announcements">
-			<div id="promoCard-container">
-				<div class="promotionCard promoCard-content3">
-					<div>
-						<img class="img-fluid" src="https://gsc-statics.s3-ap-southeast-1.amazonaws.com/cms/dc0d8650-c10b-43f4-bc4e-b2e427cf49e1.jpg">
-					</div>
-					<div class="promotionCard-info">
-						<h3>Aurum Pass and regular GSC voucher extension</h3>
-						<p></p>
-					</div>
-				</div>
-				<div class="promotionCard promoCard-content3">
-					<div>
-						<img class="img-fluid" src="https://gsc-statics.s3-ap-southeast-1.amazonaws.com/cms/6330fdc4-f5ec-410b-b535-5cbff20f2c08.jpg">
-					</div>
-					<div class="promotionCard-info">
-						<h3>Conditional Movement Control Order</h3>
-						<p></p>
-					</div>
-				</div>
-				<div class="promotionCard promoCard-content2">
-					<div>
-					</div>
-					<div class="promotionCard-info">
-
-					</div>
-				</div>
-				<div class="promotionCard promoCard-content2">
-					<div>
-					</div>
-					<div class="promotionCard-info">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<!-- Footer -->
 
@@ -473,7 +227,7 @@
 	        <div class="footer-group-container">
 	            <div class="footer-group">
 					<h4> <a href="#">Advertisement</a> </h4>
-					<a target="_blank" href="http://cinead.com.my/"><img src="assets/img/ads/ad2.png" alt="Advert2"></a>
+					<a target="_blank" href="http://cinead.com.my/"><img src="../../assets/img/ads/ad2.png" alt="Advert2"></a>
 					<h5 id="ad-text"> <a href="#">Advertise With Us</a> </h5>
 				</div>
 	        </div>
