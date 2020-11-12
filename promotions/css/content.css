@@ -27,3 +27,17 @@ img {
 div {
 	display: block;
 }
+
+/*Responsiveness*/
+
+@media (max-width: 965px) {
+	#container {
+		max-width: calc(100% - 10px);
+	}
+}
+
+@media (max-width: 605px) {
+	#container h2 {
+		font-size: calc(110% - 1px);
+	}
+}
